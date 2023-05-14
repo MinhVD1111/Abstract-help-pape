@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Abstract Help Page</title>
 </head>
 
@@ -14,18 +16,28 @@
 
     <section class="layout">
         <header class="topbar">
-            <div class="topbar-innner">
-                <div class="logo">
-                    <i class='bx bxl-dev-to'></i>
-                    <div>Abstract</div>
+            <div class="topbar-inner">
+                <div class="topbar-logo">
+                    <div class="logo">
+                        <i id="logo" class='bx bxl-dev-to' style='color:#ffffff'></i>
+                        <div class="brand">Abstract</div>
+                    </div>
+                    <a class="nav" href="./Help Center">Help Center</a>
                 </div>
-                <div class="nav" href="./Help Center"></div>
-                <button class="request">Submit a request</button>
-                <button class="Sign-in">Sign in</button>
+                <div class="topbar-button">
+                    <button type="button" class="btn btn-dark request btn-lg">Submit a request</button>
+                    <button type="button" class="btn btn-primary sign-in btn-lg">Sign in</button>
+                </div>
             </div>
         </header>
         <main role="main">
-            <section class="hero"></section>
+            <section class="hero">
+                <h1 class="hero-text">How can we help?</h1>
+                <form class="search-bar" role="search">
+                    <input class="search-bar" type="text" placeholder="Search" aria-label="Search">
+                    <i class='bx bx-search search-icon'></i>
+                </form>
+            </section>
             <div class="container">
                 <div class="list-item"></div>
                 <div class="list-item"></div>
