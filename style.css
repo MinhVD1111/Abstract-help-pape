@@ -22,7 +22,7 @@ nav.topbar-inner {
   justify-items: center;
   color: white;
   justify-content: space-between;
-  padding: 12px 8vw;
+  padding: 12px 6vw;
   position: sticky;
   top: 0;
   left: 0;
@@ -97,7 +97,7 @@ button.sign-in:hover {
   color: black;
   font-size: 60px;
   padding: 10px 30px;
-  margin-top: 70px;
+  margin: 70px 0 10px 0;
   font-weight: 510;
 }
 
@@ -112,8 +112,8 @@ form.search-bar {
 
 input.search-bar {
   border: none;
-  width: 70vh;
-  height: 6vh;
+  width: 543px;
+  height: 50px;
   padding: 2vh;
   border-radius: 3px;
   outline: none;
@@ -131,6 +131,21 @@ form.search-bar:hover {
 form.search-bar:hover,
 i.search-icon:hover {
   color: #4c5fd5;
+}
+
+
+@media screen and (max-width: 745px) {
+  .hero-text {
+    margin: 40px 0 20px 0;
+  }
+
+  .hero-text {
+    font-size: 50px;
+  }
+
+  input.search-bar {
+    width: 88vw;
+  }
 }
 
 /* items list */
@@ -179,7 +194,7 @@ footer {
 }
 
 footer div.container {
-  max-width: 100%;
+  max-width: 1fr;
   padding-top: 3vh;
   padding-left: 5vh;
 }
