@@ -16,7 +16,7 @@ header {
   background-color: black;
 }
 
-.topbar-inner {
+nav.topbar-inner {
   display: flex;
   align-items: center;
   justify-items: center;
