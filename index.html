@@ -16,7 +16,7 @@
 
     <section class="layout">
         <header class="topbar">
-            <nav class="topbar-inner">
+            <nav class="topbar-inner" id="topbar-inner">
                 <div class="topbar-logo">
                     <a class="logo" href="#">
                         <i id="logo" class='bx bxl-dev-to'></i>
@@ -28,6 +28,10 @@
                     <button type="button" class="btn btn-dark request btn-lg">Submit a request</button>
                     <button type="button" class="btn btn-primary sign-in btn-lg">Sign in</button>
                 </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class='bx bx-search search-icon'></i>
+                    <i class='bx bx-menu menu-icon'></i>
+                </a>
             </nav>
         </header>
         <main role="main">
@@ -166,6 +170,7 @@
             </div>
         </div>
     </footer>
+    <script type="module" src="/action.js"></script>
 </body>
 
 </html>

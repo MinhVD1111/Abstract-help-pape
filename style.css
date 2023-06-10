@@ -27,6 +27,7 @@ nav.topbar-inner {
   top: 0;
   left: 0;
   font-family: Arial;
+  overflow: hidden;
 }
 
 .topbar-logo {
@@ -80,6 +81,43 @@ button.sign-in {
 button.sign-in:hover {
   background-color: white;
   color: var(--blue);
+}
+
+a.icon {
+  display: none;
+}
+
+@media screen and (max-width: 745px) {
+  .topbar-inner div.topbar-button {display: none;}
+  .topbar-inner a.icon {
+    float: right;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 4px 0;
+  }
+  .topbar-inner a i.search-icon {
+    font-size: 24px;
+    margin-right: 0;
+  }
+
+  .topbar-inner a i.menu-icon {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .topbar-inner.responsive {position: relative;}
+  .topbar-inner.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  .topbar-inner.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
 }
 
 /* hero */
